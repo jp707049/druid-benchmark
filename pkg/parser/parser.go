@@ -28,7 +28,7 @@ func ParseArgs() Arguments {
 	username := flag.String("username", " ", "Enter the username if Basic auth is enabled")
 	password := flag.String("password", " ", "Enter the password if Basic auth is enabled")
 	concurrency := flag.Int("concurrency", 1, "Number of times each query in specified path gets executed concurrently")
-	reportType := flag.String("report", "csvRaw", "Report: csvRaw or csvAggregate")
+	reportType := flag.String("report", "csvRaw", "Report: csvRaw")
 	reportPath := flag.String("output", " ", "Path where the report file will be created")
 
 	flag.Parse()
